@@ -127,6 +127,7 @@
 ![amazonec2](https://img.shields.io/badge/amazonec2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
 ![jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white)
 ![docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white)
+
 ![docker-compose](https://img.shields.io/badge/DockerCompose-blue?style=for-the-badge&logo=docker&logoColor=white)
 ![nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
 ![gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=Gradle&logoColor=white)
@@ -177,6 +178,7 @@
 ![springboot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![jpa](https://img.shields.io/badge/Spring_data_jpa-F37C20?style=for-the-badge&logo=SpringSecurity&logoColor=white)
 ![querydsl](https://img.shields.io/badge/Query%20DSL-000000?style=for-the-badge&logo=apachekafka&logoColor=white)
+
 ![config](https://img.shields.io/badge/Spring%20Cloud%20Config-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![WebSocket](https://img.shields.io/badge/WebSocket-FF9800?style=for-the-badge&logo=openjdk)
 
@@ -223,11 +225,19 @@
 - YOLO 11 모델을 사용하여 사용자를 인식
 - **손의 포인트가 코보다 높게 2초간 유지**되면 해당 사용자 추종을 시작
 
+  ![recognize](images/gif/recognize.gif)
+
 ### 3. 드론 위치 제어
 
-- **전진 및 후진**
+  객체 인식 후, 첫 **Bounding Box의 면적(`targetArea`)** 을 저장하고, 이후 프레임에 대한 **Bounding Box의 면적(`area`)** 을 계산하여 드론의 위치를 제어
 
-- **좌/우진 및 좌/우향**
+  - **전진 및 후진**
+    
+    area의 크기가 감소한다면 전진, 증가한다면 후진으로 판단하여 드론의 위치 제어
+
+  - **좌/우진 및 좌/우향**
+
+    인식된 객체의 Bounding Box의 중심이 화면 중앙에서 얼마나 벗어났는지 정규화한 offset의 x축 값을 이용하여 좌/우 이동과 좌/우 방향 각도를 조절
 
 ### 4. 관절 좌표 추정 및 피드백
 
@@ -239,11 +249,14 @@
 - 동시에 여러가지의 피드백이 들어왔을 때, 섞이지 않고 순차적으로 피드백을 보내기 위해 사용
 - 빠른 응답을 위해 영상 분석부터 피드백 전달까지의 과정을 **백그라운드**로 수행
 
+  ![Round Robin](images/rr.png)
+
 ### 6. 영상 Upscaling
 
 - 빠른 영상 통신을 위해 저해상도(320x240)로 전달
 - 전달 시 **`FSRCNN 기반 4배 업스케일링`**으로 화질을 개선하여 전달
 
+  ![Upscaling](images/upscaling.png)
 <br />
 
 # 주요 기능
