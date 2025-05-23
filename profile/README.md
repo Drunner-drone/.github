@@ -13,7 +13,8 @@
    4-1. [서비스 아키텍처](#아키텍처)  
    4-2. [데이터베이스 설계](#데이터베이스-erd)
 5. [사용 기술](#사용-기술)
-6. [주요 기능](#주요-기능)
+6. [주요 기술](#주요-기술)
+7. [주요 기능](#주요-기능)
 
 <br />
 
@@ -177,7 +178,7 @@
 ![jpa](https://img.shields.io/badge/Spring_data_jpa-F37C20?style=for-the-badge&logo=SpringSecurity&logoColor=white)
 ![querydsl](https://img.shields.io/badge/Query%20DSL-000000?style=for-the-badge&logo=apachekafka&logoColor=white)
 ![config](https://img.shields.io/badge/Spring%20Cloud%20Config-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-![WebSocket](https://img.shields.io/badge/WebSocket-FF9800?style=for-the-badge)
+![WebSocket](https://img.shields.io/badge/WebSocket-FF9800?style=for-the-badge&logo=openjdk)
 
 - JAVA (OpenJDK `17.0.14`)
 - SpringBoot `3.2.5`
@@ -211,3 +212,38 @@
 <br />
 
 # 주요 기술
+
+### 1. 영상 정보 전송 & 피드백 알림 전송
+
+- 드론 서버로부터 실시간 영상을 받기 위해 **`UDP Websocket`** 연결
+- 워치로부터의 데이터 수신 및 피드백 알림 전송을 위해 **`TCP Websocket`** 연결
+
+### 2. 사용자 인식
+
+- YOLO 11 모델을 사용하여 사용자를 인식
+- **손의 포인트가 코보다 높게 2초간 유지**되면 해당 사용자 추종을 시작
+
+### 3. 드론 위치 제어
+
+- **전진 및 후진**
+
+- **좌/우진 및 좌/우향**
+
+### 4. 관절 좌표 추정 및 피드백
+
+- **`MediaPipe의 Pose Estimation`** 을 활용하여 상체 기울기, 팔 기울기, 무릎 각도 등 다양한 부위의 각도를 측정
+- 측정 각도가 정상 범위를 벗어나면 피드백 전송
+
+### 5. Round Robin
+
+- 동시에 여러가지의 피드백이 들어왔을 때, 섞이지 않고 순차적으로 피드백을 보내기 위해 사용
+- 빠른 응답을 위해 영상 분석부터 피드백 전달까지의 과정을 **백그라운드**로 수행
+
+### 6. 영상 Upscaling
+
+- 빠른 영상 통신을 위해 저해상도(320x240)로 전달
+- 전달 시 **`FSRCNN 기반 4배 업스케일링`**으로 화질을 개선하여 전달
+
+<br />
+
+# 주요 기능
