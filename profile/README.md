@@ -141,16 +141,6 @@
 
 ---
 
-### Drone
-
-- **드론 모델**
-
-  **DJI Mini 3**
-
-  ![drone](images/drone.png)
-
----
-
 ### AI
 
 - **언어**
@@ -210,6 +200,16 @@
 
 - MySQL `8.0.41`
 - Minio `RELEASE.2025-04-22T22-12-26Z`
+
+---
+
+### Drone
+
+- **드론 모델**
+
+  **DJI Mini 3**
+
+  ![drone](images/drone.png)
 
 <br />
 
