@@ -139,6 +139,37 @@
 
 ---
 
+### Drone
+
+- **드론 모델**
+
+  **DJI Mini 3**
+
+  ![drone](images/drone.png)
+
+---
+
+### AI
+
+- **언어**
+
+  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+- **서버**
+
+  ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+
+- **모델**
+
+  ![Yolo](https://img.shields.io/badge/-YOLO-111F68?style=for-the-badge&logo=YOLO&logoColor=white)
+
+- **프레임워크 / 추론 알고리즘**
+
+  ![MedaiPipe](https://img.shields.io/badge/-Mediapipe-007ACC?style=for-the-badge&logo=google&logoColor=white&size=40x40)
+  ![Pose Estimation](https://img.shields.io/badge/-Pose%20Estimation-2E8B57?style=for-the-badge&logo=python&logoColor=white&size=40x40)
+
+---
+
 ### BackEnd
 
 ![java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -146,6 +177,7 @@
 ![jpa](https://img.shields.io/badge/Spring_data_jpa-F37C20?style=for-the-badge&logo=SpringSecurity&logoColor=white)
 ![querydsl](https://img.shields.io/badge/Query%20DSL-000000?style=for-the-badge&logo=apachekafka&logoColor=white)
 ![config](https://img.shields.io/badge/Spring%20Cloud%20Config-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-FF9800?style=for-the-badge)
 
 - JAVA (OpenJDK `17.0.14`)
 - SpringBoot `3.2.5`
