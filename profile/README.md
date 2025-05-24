@@ -209,7 +209,8 @@
 
   **DJI Mini 3**
 
-  <img src="images/drone.png" alt="drone" width="400px">
+  | <img src="images/drone.png" alt="drone" width="400px"> |
+  | ------------------------------------------------------ |
 
 <br />
 
@@ -225,7 +226,8 @@
 - YOLO 11 모델을 사용하여 사용자를 인식
 - **손의 포인트가 코보다 높게 2초간 유지**되면 해당 사용자 추종을 시작
 
-  ![recognize](images/gif/recognize.gif)
+  | <img src="images/gif/recognize.gif" alt="drone" width="400px"> |
+  | -------------------------------------------------------------- |
 
 ### 3. 드론 위치 제어
 
@@ -249,14 +251,16 @@
 - 동시에 여러가지의 피드백이 들어왔을 때, 섞이지 않고 순차적으로 피드백을 보내기 위해 사용
 - 빠른 응답을 위해 영상 분석부터 피드백 전달까지의 과정을 **백그라운드**로 수행
 
-  <img src="images/rr.png" alt="RR" width="450px">
+  | <img src="images/rr.png" alt="RR" width="450px"> |
+  | ------------------------------------------------ |
 
 ### 6. 영상 Upscaling
 
 - 빠른 영상 통신을 위해 저해상도(320x240)로 전달
 - 전달 시 **`FSRCNN 기반 4배 업스케일링`**으로 화질을 개선하여 전달
 
-  ![Upscaling](images/upscaling.png)
+  | ![Upscaling](images/upscaling.png) |
+  | ---------------------------------- |
 
 ### 7. 피드백 영상 저장
 
@@ -279,14 +283,16 @@
 
 - **드론이 러닝 중인 사용자를 따라 이동하며 자세를 분석합니다.**
 
-  ![drone_tracking](images/gif/drone_tracking.gif)
+  | ![drone_tracking](images/gif/drone_tracking.gif) |
+  | ------------------------------------------------ |
 
 ### 2. 실시간 자세 피드백 알림
 
 - **갤럭시 워치를 통해 심박수, 페이스 등 러닝 시 측정되는 신체 정보와 잘못된 러닝 자세에 대한 피드백을 제공**
 - **페이스 모드에서는 페이스를 조절하여 진행 가능**
 
-  ![watch](images/gif/watch.gif)
+  | ![watch](images/gif/watch.gif) |
+  | ------------------------------ |
 
 ### 3. 운동 기록
 
@@ -297,8 +303,10 @@
 
 - **날짜 별 러닝 기록과 러닝 경로, 페이스 구간 등 다양한 정보 확인**
 
-  ![history](images/gif/mobile.gif)
+  | ![history](images/gif/mobile.gif) |
+  | --------------------------------- |
 
 - **러닝 자세 분석 히스토리**
 
-  ![feedback](images/gif/history.gif)
+  | ![feedback](images/gif/history.gif) |
+  | ----------------------------------- |
