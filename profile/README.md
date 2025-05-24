@@ -25,7 +25,7 @@
 > 러닝을 하며 **페이스 조절이 어렵고**, **자세 교정이나 피드백을 받기 힘들다**는 점은 많은 러너들의 공통된 고민입니다. 저희는 이러한 문제를 해결하기 위해, **드론을 활용한 스마트 러닝 서비스 `Drunner`** 를 개발했습니다.
 >
 > 📡 **실시간 자세 분석**, 🕒 **페이스 메이커 기능**, 📱 **운동 기록 관리**까지
-> 이제 러닝은 혼자가 아닌, 하늘에서 함께합니다.
+> 이제 러닝은 혼자가 아닌, 하늘에서 **`Drunner`** 와 함께합니다.
 
 <br />
 
@@ -209,7 +209,7 @@
 
   **DJI Mini 3**
 
-  ![drone](images/drone.png)
+  <img src="images/drone.png" alt="drone" width="400px">
 
 <br />
 
@@ -249,7 +249,7 @@
 - 동시에 여러가지의 피드백이 들어왔을 때, 섞이지 않고 순차적으로 피드백을 보내기 위해 사용
 - 빠른 응답을 위해 영상 분석부터 피드백 전달까지의 과정을 **백그라운드**로 수행
 
-  ![Round Robin](images/rr.png)
+  <img src="images/rr.png" alt="RR" width="450px">
 
 ### 6. 영상 Upscaling
 
@@ -271,8 +271,9 @@
 
 - **갤럭시 워치를 통해 트래킹(일반) 모드와 페이스 모드를 선택하여 러닝 시작**
 - **러닝을 시작하면 드론이 떠올라 러닝을 준비**
-
-  ![watch start](images/static/watch_start.png)
+  | 트래킹(일반) 모드 | 페이스 모드 |
+  |---|---|
+  | <img src="images/static/normal_start.png" alt="watch" width="250px">| <img src="images/static/pace_start.png" alt="watch" width="250px"> |
 
 ### 1. 러닝 트래킹
 
@@ -289,9 +290,10 @@
 
 ### 3. 운동 기록
 
-- **러닝 종료 시, 기록 확인 및 저장**
+- **러닝 종료 시, 러닝 기록 확인 및 저장**
 
-  ![summary](images/static/summary.png)
+  | <img src="images/static/summary_1.png" alt="watch" width="250px"> | <img src="images/static/summary_2.png" alt="watch" width="250px"> | <img src="images/static/summary_3.png" alt="watch" width="250px"> |
+  | ----------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------- |
 
 - **날짜 별 러닝 기록과 러닝 경로, 페이스 구간 등 다양한 정보 확인**
 
